@@ -5,7 +5,7 @@ spawnRadius = 100.0
 -- model is picked at random when player enters one of the spawn areas
 horseData = {
         -- american paint
-        {locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
+        {spawnRate = 1, locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
 --                 "a_c_horse_americanpaint_tobiano",
 --                 "a_c_horse_americanpaint_overo",
                 "a_c_horse_americanpaint_greyovero",
@@ -13,7 +13,7 @@ horseData = {
                 "a_c_horse_eagleflies",
         }},
         -- american standardbred
-        {locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
+        {spawnRate = 1, locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
 --                 "a_c_horse_americanstandardbred_black",
 --                 "a_c_horse_americanstandardbred_buckskin",
                 "a_c_horse_americanstandardbred_lightbuckskin",
@@ -21,13 +21,13 @@ horseData = {
                 "a_c_horse_americanstandardbred_silvertailbuckskin",
         }},
         -- andalusian
-        {locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
+        {spawnRate = 1, locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
                 "a_c_horse_andalusian_darkbay",
                 "a_c_horse_andalusian_perlino",
                 "a_c_horse_andalusian_rosegray",
         }},
         -- appaloosa
-        {locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
+        {spawnRate = 1, locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
 --                 "a_c_horse_appaloosa_blanket",
 --                 "a_c_horse_appaloosa_leopardblanket",
 --                 "a_c_horse_appaloosa_fewspotted_pc",
@@ -38,7 +38,7 @@ horseData = {
                 "a_c_horse_gang_charles",
         }},
         -- arabian
-        {locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
+        {spawnRate = 1, locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
                 "a_c_horse_arabian_black",
                 "a_c_horse_arabian_grey",
                 "a_c_horse_arabian_redchestnut",
@@ -48,19 +48,19 @@ horseData = {
                 "a_c_horse_arabian_white",
         }},
         -- ardennes
-        {locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
+        {spawnRate = 1, locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
                 "a_c_horse_ardennes_bayroan",
                 "a_c_horse_ardennes_irongreyroan",
                 "a_c_horse_ardennes_strawberryroan",
                 "a_c_horse_gang_bill",
         }},
         -- belgian draft horse
-        {locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
+        {spawnRate = 1, locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
                 "a_c_horse_belgian_blondchestnut",
                 "a_c_horse_belgian_mealychestnut",
         }},
         -- breton
-        {locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
+        {spawnRate = 1, locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
                 "a_c_horse_breton_grullodun",
                 "a_c_horse_breton_mealydapplebay",
                 "a_c_horse_breton_redroan",
@@ -69,7 +69,7 @@ horseData = {
                 "a_c_horse_breton_steelgrey",
         }},
         -- criollo
-        {locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
+        {spawnRate = 1, locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
                 "a_c_horse_criollo_baybrindle",
                 "a_c_horse_criollo_bayframeovero",
                 "a_c_horse_criollo_blueroanovero",
@@ -78,14 +78,14 @@ horseData = {
                 "a_c_horse_criollo_sorrelovero",
         }},
         -- dutch warmblood
-        {locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
+        {spawnRate = 1, locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
                 "a_c_horse_dutchwarmblood_chocolateroan",
                 "a_c_horse_dutchwarmblood_sealbrown",
                 "a_c_horse_dutchwarmblood_sootybuckskin",
                 "a_c_horse_buell_warvets",
         }},
         -- gypsy cob
-        {locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
+        {spawnRate = 1, locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
                 "a_c_horse_gypsycob_palominoblagdon",
                 "a_c_horse_gypsycob_piebald",
                 "a_c_horse_gypsycob_skewbald",
@@ -94,7 +94,7 @@ horseData = {
                 "a_c_horse_gypsycob_whiteblagon",
         }},
         -- hungarian half-bred
-        {locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
+        {spawnRate = 1, locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
 --                 "a_c_horse_hungarianhalfbred_flaxenchestnut",        
                 "a_c_horse_hungarianhalfbred_darkdapplebay",
                 "a_c_horse_hungarianhalfbred_liverchestnut",
@@ -102,7 +102,7 @@ horseData = {
                 "a_c_horse_gang_john",
         }},
         -- kentucky saddler
-        {locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
+        {spawnRate = 1, locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
 --                 "a_c_horse_kentuckysaddle_black",
 --                 "a_c_horse_kentuckysaddle_buttermilkbuckskin_pc",
 --                 "a_c_horse_kentuckysaddle_chestnutpinto",
@@ -111,7 +111,7 @@ horseData = {
                 "a_c_horse_gang_uncle",
         }},
         -- kladruber
-        {locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
+        {spawnRate = 1, locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
                 "a_c_horse_kladruber_black",
                 "a_c_horse_kladruber_cremello",
                 "a_c_horse_kladruber_dapplerosegrey",
@@ -120,7 +120,7 @@ horseData = {
                 "a_c_horse_kladruber_white",
         }},
         -- missouri fox trotter
-        {locations = {{x = 1320.33, y = 661.62, z = 87.26, horse = nil}}, horses = {
+        {spawnRate = 1, locations = {{x = 1320.33, y = 661.62, z = 87.26, horse = nil}}, horses = {
                 "a_c_horse_missourifoxtrotter_amberchampagne",
                 "a_c_horse_missourifoxtrotter_blacktovero",
                 "a_c_horse_missourifoxtrotter_blueroan",
@@ -131,7 +131,7 @@ horseData = {
                 "a_c_horse_gang_micah",
         }},
         -- morgan
---         {locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
+--         {spawnRate = 1, locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
 --                 "a_c_horse_morgan_bay",
 --                 "a_c_horse_morgan_bayroan",
 --                 "a_c_horse_morgan_flaxenchestnut",
@@ -139,7 +139,7 @@ horseData = {
 --                 "a_c_horse_morgan_palomino",
 --         }},
         -- mustang
-        {locations = {{x = -420.62, y = 921.22, z = 117.48, horse = nil}}, horses = {
+        {spawnRate = 1, locations = {{x = -420.62, y = 921.22, z = 117.48, horse = nil}}, horses = {
 --                 "a_c_horse_mustang_grullodun",
 --                 "a_c_horse_mustang_wildbay",
                 "a_c_horse_mustang_tigerstripedbay",
@@ -151,7 +151,7 @@ horseData = {
                 "a_c_horse_gang_sadie_endlesssummer",
         }},
         -- nokota
-        {locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
+        {spawnRate = 1, locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
 --                 "a_c_horse_nokota_blueroan",
 --                 "a_c_horse_nokota_whiteroan",
                 "a_c_horse_nokota_reversedappleroan",
@@ -159,7 +159,7 @@ horseData = {
                 "a_c_horse_gang_charles_endlesssummer",
         }},
         -- norfolk roadster
-        {locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
+        {spawnRate = 1, locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
                 "a_c_horse_norfolkroadster_black",
                 "a_c_horse_norfolkroadster_dappledbuckskin",
                 "a_c_horse_norfolkroadster_piebaldroan",
@@ -168,18 +168,18 @@ horseData = {
                 "a_c_horse_norfolkroadster_spottedtricolor",
         }},
         -- shire
-        {locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
+        {spawnRate = 1, locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
                 "a_c_shire_darkbay",
                 "a_c_shire_lightgrey",
                 "a_c_shire_ravenblack",
         }},
         -- suffolk punch
-        {locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
+        {spawnRate = 1, locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
                 "a_c_horse_suffolkpunch_redchestnut",
                 "a_c_horse_suffolkpunch_sorrel",
         }},
         -- tennessee walker
-        {locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
+        {spawnRate = 1, locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
 --                 "a_c_horse_tennesseewalker_blackrabicano",
 --                 "a_c_horse_tennesseewalker_chestnut",
 --                 "a_c_horse_tennesseewalker_dapplebay",
@@ -189,7 +189,7 @@ horseData = {
                 "a_c_horse_tennesseewalker_mahoganybay",
         }},
         -- thoroughbred
-        {locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
+        {spawnRate = 1, locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
 --                 "a_c_horse_thoroughbred_bloodbay",
 --                 "a_c_horse_thoroughbred_dapplegrey",
                 "a_c_horse_thoroughbred_blackchestnut",
@@ -199,7 +199,7 @@ horseData = {
                 "a_c_horse_gang_john_endlesssummer",
         }},
         -- turkoman
-        {locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
+        {spawnRate = 1, locations = {{x = -406.17, y = 928.29, z = 117.35, horse = nil}}, horses = {
                 "a_c_horse_turkoman_black",
                 "a_c_horse_turkoman_chestnut",
                 "a_c_horse_turkoman_darkbay",
