@@ -1,12 +1,18 @@
+---
+--- wild_horses.lua
+---
+--- This file contains the main code for the totally_wild_horses script
+---
+
 -- Function to spawn a wild horse
 function spawnWildHorse(modelName, coords)
     local horseModel = GetHashKey(modelName)
-    
+
     RequestModel(horseModel)
     while not HasModelLoaded(horseModel) do
         Wait(500)
     end
-    
+
     local horse = CreatePed(horseModel, coords.x, coords.y, coords.z, false, false)
     if DoesEntityExist(horse) then
         -- Make horse model visible
@@ -19,29 +25,34 @@ function spawnWildHorse(modelName, coords)
         Citizen.InvokeNative(0x5653AB26C82938CF, horse, 41611, math.random(0, 1) * 1.0) -- SetCharExpression
         -- Update ped variation (required after horse gender change)
         Citizen.InvokeNative(0xCC8CA3E88256E58F, horse, false, true, true, true, false) -- UpdatePedVariation
-        
-        print("wild horse spawned at coordinates: x = " .. coords.x .. ", y = " .. coords.y .. ", z = " .. coords.z)
+        if debug then
+            print("wild horse spawned at coordinates: x = " .. coords.x .. ", y = " .. coords.y .. ", z = " .. coords.z)
+        end
         return horse
     else
-        print("failed to create horse. model: " .. modelName)
+        if debug then
+            print("failed to create horse. model: " .. modelName)
+        end
     end
     return nil
 end
 
-
-
--- Main code
-
+-- MAIN CODE --
 -- seed random
-math.randomseed(GetGameTimer()) -- seed
-for i = 1, 5 do math.random() end -- warm up
+math.randomseed(GetGameTimer())
+-- warm up
+for i = 1, 5 do
+    math.random()
+end
 
 RegisterCommand('spawnWildHorse', function(source, args, rawCommand)
-    spawnWildHorse(args[1], {x = tonumber(args[2]), y = tonumber(args[3]), z = tonumber(args[4])})
+    spawnWildHorse(args[1], { x = tonumber(args[2]), y = tonumber(args[3]), z = tonumber(args[4]) })
 end, false)
 
 Citizen.CreateThread(function()
-    print("wild_horses script loaded and running")
+    if debug then
+        print("totally_wild_horses script loaded and running")
+    end
     while true do
         -- get player coordinates
         local player = PlayerPedId()
@@ -72,7 +83,9 @@ Citizen.CreateThread(function()
                             -- horse should not spawn if within 50 units of player
                             local distanceToPlayer = #(playerCoords - vector3(spawnCoords.x, spawnCoords.y, spawnCoords.z))
                             if distanceToPlayer < 50.0 then
-                                print("spawn loc too close to player")
+                                if debug then
+                                    print("spawn loc too close to player")
+                                end
                             else
                                 -- select a random horse model from the breed
                                 local horseModel = horseBreed.horses[math.random(#horseBreed.horses)]
@@ -80,32 +93,40 @@ Citizen.CreateThread(function()
                                 location.horse = spawnWildHorse(horseModel, spawnCoords)
                             end
                         else
-                            print("horse not spawned; did not meet probability")
+                            if debug then
+                                print("horse not spawned; did not meet probability")
+                            end
                         end
                     else
                         -- check if horse was despawned
-                        if not Citizen.InvokeNative(0xD42BD6EB2E0F1677, location.horse) then -- DoesEntityExist
+                        if not Citizen.InvokeNative(0xD42BD6EB2E0F1677, location.horse) then
+                            -- DoesEntityExist
                             location.horse = nil
                         else
-                            print("horse already exists")
+                            if debug then
+                                print("horse already exists")
+                            end
                         end
                     end
                 else
                     -- if area has a horse
                     if location.horse ~= nil then
                         -- if horse has been tamed or despawned, reset area horse
-                        if not Citizen.InvokeNative(0x3B005FF0538ED2A9, location.horse) -- GetAnimalIsWild
-                        or not Citizen.InvokeNative(0xD42BD6EB2E0F1677, location.horse) then -- DoesEntityExist
-                            print("horse has been tamed or does not exist")
+                        if not Citizen.InvokeNative(0x3B005FF0538ED2A9, location.horse) -- GetAnimalIsWild or DoesEntityExist
+                                or not Citizen.InvokeNative(0xD42BD6EB2E0F1677, location.horse) then
+                            if debug then
+                                print("horse has been tamed or does not exist")
+                            end
                             location.horse = nil
                         else
-                            print("horse still exists")
+                            if debug then
+                                print("horse still exists")
+                            end
                         end
                     end
                 end
             end
         end
-        Wait(5 * 1000) -- wait for 5 seconds
---         Wait(1 * 1000 * 60)  -- wait for 1 minute
+        Wait(checkEvery * 1000)
     end
 end)
