@@ -18,3 +18,7 @@ This script comes pre-configured, and all settings and spawn groups/locations ca
 Simply download this resource, and place the `totally_wild_horses` folder inside your server's `resources` folder.
 Tweak any settings you want, and restart the server or use the command `refresh` followed by `ensure
 totally_wild_horses` to load the resource.
+
+# Wild Horse Map
+
+![Wild horse map](https://cdn.discordapp.com/attachments/820034845366550548/1194083736640311439/Wild_Horse_Map.png)
