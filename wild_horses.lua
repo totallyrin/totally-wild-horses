@@ -13,7 +13,7 @@ function spawnWildHorse(modelName, coords)
         Wait(500)
     end
 
-    local horse = CreatePed(horseModel, coords.x, coords.y, coords.z, false, false)
+    local horse = CreatePed(horseModel, coords.x, coords.y, coords.z, true, true, true)
     if DoesEntityExist(horse) then
         -- Make horse model visible
         Citizen.InvokeNative(0x283978A15512B2FE, horse) -- SetRandomOutfitVariation
@@ -28,6 +28,7 @@ function spawnWildHorse(modelName, coords)
         if debug then
             print("wild horse spawned at coordinates: x = " .. coords.x .. ", y = " .. coords.y .. ", z = " .. coords.z)
         end
+        SetModelAsNoLongerNeeded(horseModel) -- allow model unload
         return horse
     else
         if debug then
@@ -65,7 +66,6 @@ Citizen.CreateThread(function()
                 if distance < spawnRadius then
                     -- check if horse already exists
                     if location.horse == nil then
-
                         -- generate random num between 0 and 1
                         local p = math.random()
                         -- check against spawnRate
