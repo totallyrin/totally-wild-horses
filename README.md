@@ -21,4 +21,4 @@ totally_wild_horses` to load the resource.
 
 # Wild Horse Map
 
-![Wild horse map](https://cdn.discordapp.com/attachments/820034845366550548/1194083736640311439/Wild_Horse_Map.png)
+![map](https://github.com/totallyrin/totally_wild_horses/assets/1056415/4df75d09-0424-4e33-91d8-de482c3458c4)
