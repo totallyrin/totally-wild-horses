@@ -59,8 +59,8 @@ Citizen.CreateThread(function()
         for _, horseBreed in ipairs(horseData) do
             for _, location in ipairs(horseBreed.locations) do
                 local distance = #(playerCoords - vector3(location.x, location.y, location.z))
-                -- if player is within spawn radius
-                if distance < spawnRadius then
+                -- if player is near spawn area
+                if distance < playerRadius then
                     -- check if horse already exists
                     if location.horse == nil then
                         -- generate random num between 0 and 1
@@ -108,11 +108,13 @@ Citizen.CreateThread(function()
                 else
                     -- if area has a horse
                     if location.horse ~= nil then
-                        -- if horse has been tamed or despawned, reset area horse
-                        if not Citizen.InvokeNative(0x3B005FF0538ED2A9, location.horse) -- GetAnimalIsWild or DoesEntityExist
-                                or not Citizen.InvokeNative(0xD42BD6EB2E0F1677, location.horse) then
+                        -- if does not exist, reset area horse, allowing another horse to spawn
+                        if not Citizen.InvokeNative(0xD42BD6EB2E0F1677, location.horse) -- DoesEntityExist
+                        -- uncomment following line to have horse reset when tamed
+                        --or not Citizen.InvokeNative(0x3B005FF0538ED2A9, location.horse) -- GetAnimalIsWild
+                        then
                             if debug then
-                                print("horse has been tamed or does not exist")
+                                print("loc horse reset")
                             end
                             location.horse = nil
                         else
