@@ -19,7 +19,7 @@ Simply download this resource, and place the `totally_wild_horses` folder inside
 Tweak any settings you want, and restart the server or use the command `refresh` followed by `ensure
 totally_wild_horses` to load the resource.
 
-# Wild Horse Map (pre-configured spawn locations, including base game spawns)
+# Wild Horse Map<br>(pre-configured spawn locations, including base game spawns)
 
 ![map](https://github.com/totallyrin/totally_wild_horses/assets/1056415/4df75d09-0424-4e33-91d8-de482c3458c4)
 
