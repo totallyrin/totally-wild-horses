@@ -82,7 +82,7 @@ Citizen.CreateThread(function()
 
                             -- horse should not spawn if within 50 units of player
                             local distanceToPlayer = #(playerCoords - vector3(spawnCoords.x, spawnCoords.y, spawnCoords.z))
-                            if distanceToPlayer < 50.0 then
+                            if distanceToPlayer < spawnDistance then
                                 if debug then
                                     print("spawn loc too close to player")
                                 end

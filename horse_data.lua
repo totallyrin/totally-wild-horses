@@ -5,16 +5,22 @@
 ---
 
 -- debug mode (enables print statements)
-debug = false
+debug = true
 -- spawn area radius, default 100.0
 spawnRadius = 100.0
 -- attempt spawn every x seconds, default 30s
 checkEvery = 30
+-- minimum distance from player at which the horse can spawn, default 25.0
+spawnDistance = 25.0
 
--- horse data stored as a list of spawn locs, and list of possible models for those areas
--- model is picked at random when player enters one of the spawn areas
--- each breed / group has a spawnRate, which is a percentage (1.0 = 100% chance of spawning)
--- default 0.25 for "rare" horses and 0.50 for everything else
+--- horse data stored as a list of spawn locs, and list of possible models for those areas
+--- model is picked at random when player enters one of the spawn areas
+--- each breed / group has a spawnRate, which is a percentage (1.0 = 100% chance of spawning)
+--- default 0.25 for "rare" horses and 0.50 for everything else
+--- commented out models are models that already get spawned by the game itself. this script DOES NOT alter existing
+--- spawn areas for horses, only adds new spawn areas
+--- where possible I have tried to keep spawn areas consistent. I.e. if there is a base game spawn for Mustangs, I
+--- have added a Mustang spawn point in the same area.
 horseData = {
     -- american paint
     { spawnRate = 0.5, locations = {
