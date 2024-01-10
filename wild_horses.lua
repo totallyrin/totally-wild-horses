@@ -38,13 +38,9 @@ function spawnWildHorse(modelName, coords)
     return nil
 end
 
--- MAIN CODE --
+--- MAIN CODE ---
 -- seed random
 math.randomseed(GetGameTimer())
--- warm up
-for i = 1, 5 do
-    math.random()
-end
 
 -- spawnWildHorse command below. Uncomment to enable
 --RegisterCommand('spawnWildHorse', function(source, args, rawCommand)
