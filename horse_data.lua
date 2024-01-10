@@ -5,7 +5,7 @@
 ---
 
 -- debug mode (enables print statements)
-debug = true
+debug = false
 -- spawn area radius, default 100.0
 spawnRadius = 100.0
 -- attempt spawn every x seconds, default 30s
