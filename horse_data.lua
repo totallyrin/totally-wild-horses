@@ -8,7 +8,7 @@
 debug = false
 -- spawn area radius, default 100.0
 spawnRadius = 100.0
--- player in range radius, default 150.0
+-- player in range radius, default 200.0
 playerRadius = 200.0
 -- attempt spawn every x seconds, default 30s
 checkEvery = 30
