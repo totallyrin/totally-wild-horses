@@ -46,9 +46,10 @@ for i = 1, 5 do
     math.random()
 end
 
-RegisterCommand('spawnWildHorse', function(source, args, rawCommand)
-    spawnWildHorse(args[1], { x = tonumber(args[2]), y = tonumber(args[3]), z = tonumber(args[4]) })
-end, false)
+-- spawnWildHorse command below. Uncomment to enable
+--RegisterCommand('spawnWildHorse', function(source, args, rawCommand)
+--    spawnWildHorse(args[1], { x = tonumber(args[2]), y = tonumber(args[3]), z = tonumber(args[4]) })
+--end, false)
 
 Citizen.CreateThread(function()
     if debug then
