@@ -162,26 +162,14 @@ horseData = {
     } },
     -- kentucky saddler
     --{ spawnRate = 0.5, locations = {
-    --    { x = 245.13, y = -66.26, z = 104.79, horse = nil }, -- heartlands
-    --    { x = 947.22, y = -1799.05, z = 44.43, horse = nil }, -- heartlands
-    --    { x = 1517.37, y = -1472.8, z = 71.57, horse = nil }, -- heartlands
-    --    { x = 676.59, y = 1970.79, z = 228.81, horse = nil }, -- ambarino, donner falls
-    --    { x = 328.35, y = 2049.39, z = 225.94, horse = nil }, -- ambarino, wapiti
-    --    { x = 567.87, y = 1180.52, z = 193.77, horse = nil }, -- cumberland forest
-    --    { x = -979.31, y = 814.5, z = 121.49, horse = nil }, -- cattail pond
-    --    { x = -2549.51, y = 574.45, z = 140.15, horse = nil }, -- big valley
-    --    { x = -1555.72, y = -1598.41, z = 83.28, horse = nil }, -- great plains
-    --    { x = -2158.1, y = -1576.45, z = 148.42, horse = nil }, -- tall trees
-    --    { x = -1368.36, y = -2570.1, z = 74.33, horse = nil }, -- hennigan's stead
-    --    { x = -3127.05, y = -3138.27, z = 2.62, horse = nil }, -- cholla springs, lake don julio
-    --    { x = -4555.11, y = -2656.87, z = -7.45, horse = nil }, -- cholla springs
+    -- ADD SPAWN LOCATIONS HERE
     --}, horses = {
     --    --"a_c_horse_kentuckysaddle_black",
     --    --"a_c_horse_kentuckysaddle_buttermilkbuckskin_pc",
     --    --"a_c_horse_kentuckysaddle_chestnutpinto",
     --    --"a_c_horse_kentuckysaddle_grey",
     --    --"a_c_horse_kentuckysaddle_silverbay",
-    --    "a_c_horse_gang_uncle",
+    --    "a_c_horse_gang_uncle", -- BUGGED; shows up as "Nell II". Not tested with saving tamed horse
     --} },
     -- kladruber
     { spawnRate = 0.5, locations = {
@@ -208,18 +196,9 @@ horseData = {
         "a_c_horse_missourifoxtrotter_silverdapplepinto",
         "a_c_horse_gang_micah",
     } },
-    -- morgan (some locs missing)
+    -- morgan
     --{ spawnRate = 0.5, locations = {
-    --    { x = 488.54, y = 1570.47, z = 182.42, horse = nil }, -- cumberland forest, fort wallace
-    --    { x = 509.67, y = 1125.06, z = 192.12, horse = nil }, -- cumberland forest
-    --    { x = -1858.81, y = 523.15, z = 114.95, horse = nil }, -- big valley
-    --    { x = -765.85, y = -789.82, z = 51.24, horse = nil }, -- big valley, south of bard's crossing
-    --    { x = -870.82, y = -1842.85, z = 63.77, horse = nil }, -- great plains
-    --    { x = -2311.65, y = -2970.0, z = 4.97, horse = nil }, -- hennigan's stead
-    --    { x = -3508.05, y = -2903.23, z = 1.7, horse = nil }, -- cholla springs, lake don julio
-    --    { x = -3533.14, y = -3333.79, z = 11.95, horse = nil }, -- cholla springs, lake don julio
-    --    { x = -5060.98, y = -3597.31, z = -2.63, horse = nil }, -- rio bravo
-    --    { x = -5703.14, y = -3309.0, z = -23.16, horse = nil }, -- gaptooth ridge
+    -- ADD SPAWN LOCATIONS HERE
     --}, horses = {
     --    "a_c_horse_morgan_bay",
     --    "a_c_horse_morgan_bayroan",
@@ -288,7 +267,7 @@ horseData = {
         "a_c_horse_suffolkpunch_redchestnut",
         "a_c_horse_suffolkpunch_sorrel",
     } },
-    -- tennessee walker
+    -- tennessee walker (some locs may be missing)
     { spawnRate = 0.5, locations = {
         { x = 1016.22, y = 237.16, z = 116.7, horse = nil }, -- heartlands
         { x = 564.89, y = 78.4, z = 151.89, horse = nil }, -- heartlands
