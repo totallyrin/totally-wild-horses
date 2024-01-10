@@ -8,6 +8,8 @@
 debug = false
 -- spawn area radius, default 100.0
 spawnRadius = 100.0
+-- player in range radius, default 150.0
+playerRadius = 200.0
 -- attempt spawn every x seconds, default 30s
 checkEvery = 30
 -- minimum distance from player at which the horse can spawn, default 25.0
