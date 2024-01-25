@@ -1,4 +1,4 @@
-# totally_wild_horses
+# Totally Wild Horses
 
 RedM script to add custom wild horse spawns for specified horse models. By default, this script adds specific spawn
 locations for all horse breeds/models in the base game.
