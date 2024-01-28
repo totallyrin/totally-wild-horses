@@ -257,9 +257,9 @@ horseData = {
         { x = -254.13, y = 1026.25, z = 127.19, horse = nil }, -- valentine
         { x = -523.57, y = -398.59, z = 82.72, horse = nil }, -- flatneck station
     }, horses = {
-        "a_c_shire_darkbay",
-        "a_c_shire_lightgrey",
-        "a_c_shire_ravenblack",
+        "a_c_horse_shire_darkbay",
+        "a_c_horse_shire_lightgrey",
+        "a_c_horse_shire_ravenblack",
     } },
     -- suffolk punch
     { spawnRate = 0.25, locations = {
