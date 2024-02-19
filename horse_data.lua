@@ -86,6 +86,7 @@ horseData = {
         "a_c_horse_arabian_rosegreybay",
         "a_c_horse_arabian_warpedbrindle_pc",
         "a_c_horse_arabian_white",
+        "a_c_horse_gang_arthur",
     } },
     -- ardennes
     { spawnRate = 0.25, locations = {
