@@ -150,7 +150,7 @@ horseData = {
         "a_c_horse_gypsycob_skewbald",
         "a_c_horse_gypsycob_splashedbay",
         "a_c_horse_gypsycob_splashedpiebald",
-        "a_c_horse_gypsycob_whiteblagon",
+        "a_c_horse_gypsycob_whiteblagdon",
     } },
     -- hungarian half-bred
     { spawnRate = 0.25, locations = {
@@ -158,7 +158,7 @@ horseData = {
         { x = -4117.64, y = -2582.63, z = -1.11, horse = nil }, -- cholla springs
     }, horses = {
         --"a_c_horse_hungarianhalfbred_flaxenchestnut",
-        "a_c_horse_hungarianhalfbred_darkdapplebay",
+        "a_c_horse_hungarianhalfbred_darkdapplegrey",
         "a_c_horse_hungarianhalfbred_liverchestnut",
         "a_c_horse_hungarianhalfbred_piebaldtobiano",
         "a_c_horse_gang_john",
@@ -225,6 +225,7 @@ horseData = {
         "a_c_horse_mustang_chestnuttovero",
         "a_c_horse_mustang_reddunovero",
         "a_c_horse_gang_sadie_endlesssummer",
+        "a_c_horse_gang_lenny",
     } },
     -- nokota
     { spawnRate = 0.25, locations = {
@@ -301,7 +302,6 @@ horseData = {
         "a_c_horse_thoroughbred_blackchestnut",
         "a_c_horse_thoroughbred_brindle",
         "a_c_horse_thoroughbred_reversedappleblack",
-        "a_c_horse_gang_john",
         "a_c_horse_gang_john_endlesssummer",
     } },
     -- turkoman
