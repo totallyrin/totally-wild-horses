@@ -222,7 +222,7 @@ horseData = {
         "a_c_horse_mustang_goldendun",
         "a_c_horse_mustang_blackovero",
         "a_c_horse_mustang_buckskin",
-        "a_c_horse_mustang_chestnutovero",
+        "a_c_horse_mustang_chestnuttovero",
         "a_c_horse_mustang_reddunovero",
         "a_c_horse_gang_sadie_endlesssummer",
     } },
