@@ -15,9 +15,9 @@ locations for all horse breeds/models in the base game.
 # Usage
 
 This script comes pre-configured, and all settings and spawn groups/locations can be changed in `horse_data.lua`.
-Simply download this resource, and place the `totally_wild_horses` folder inside your server's `resources` folder.
+Simply download this resource, and place the `totally-wild-horses` folder inside your server's `resources` folder.
 Tweak any settings you want, and restart the server or use the command `refresh` followed by `ensure
-totally_wild_horses` to load the resource.
+totally-wild-horses` to load the resource.
 
 # Wild Horse Map<br>(pre-configured spawn locations, including base game spawns)
 
