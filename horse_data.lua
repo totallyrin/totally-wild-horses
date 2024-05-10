@@ -302,7 +302,7 @@ horseData = {
         "a_c_horse_thoroughbred_blackchestnut",
         "a_c_horse_thoroughbred_brindle",
         "a_c_horse_thoroughbred_reversedappleblack",
-        "a_c_horse_gang_john_endlesssummer",
+        "a_c_horse_john_endlesssummer",
     } },
     -- turkoman
     { spawnRate = 0.08, locations = {
